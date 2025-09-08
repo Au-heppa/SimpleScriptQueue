@@ -1,0 +1,1 @@
+Free to use for any personal project or company with 12 or fewer people. Do not use to train any AI / LLM / neural network thing. Sample project at [https://drive.google.com/file/d/1DU8QGmHnoY8F_S_glBQtvlgNEGjwSKSt](https://drive.google.com/drive/folders/1tA8OGVcPHz-FpWi63R9SyiaoJczQdL4f)
