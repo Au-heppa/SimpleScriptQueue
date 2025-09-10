@@ -31,17 +31,18 @@ public:
 	UFUNCTION(BlueprintPure)
 	FORCEINLINE bool IsActive() const { return bActive; }
 
-	//
+	//Called immediately when the object is created
 	UFUNCTION(BlueprintNativeEvent)
 	void OnAddedToQueue();
 	virtual void OnAddedToQueue_Implementation() { }
 
-	//
+	//Called earliest the next tick
 	UFUNCTION(BlueprintNativeEvent)
 	void OnActivate();
 	virtual void OnActivate_Implementation() { }
 
-	//
+	//Clean up any hard references to actors or components.
+	//Invalidate any timers and cancel any gameplay tasks
 	UFUNCTION(BlueprintNativeEvent)
 	void OnDeactivate(bool Success);
 	virtual void OnDeactivate_Implementation(bool Success) { }
@@ -120,5 +121,6 @@ protected:
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, meta=(ExposeOnSpawn=true), Category="Settings")
 	bool bInstant;
 };
+
 
 
