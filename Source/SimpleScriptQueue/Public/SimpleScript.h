@@ -113,14 +113,16 @@ protected:
 	//============================================================================================================
 protected:
 
-	//
+	//Set to true for scripts that have the potential to fire a lot of times per map.
+	//For one time story type of scripts you can set this to false.
 	UPROPERTY(EditAnywhere, BlueprintReadOnly)
 	bool bUseScriptPool = true;
 
-	//
+	//If the script should go into the "Queue" or "InstantScripts" array.
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, meta=(ExposeOnSpawn=true), Category="Settings")
 	bool bInstant;
 };
+
 
 
 
